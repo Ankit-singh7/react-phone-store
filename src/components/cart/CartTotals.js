@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import PayPalButton from './PayPalButton'
 class CartTotals extends Component {
   render() {
     const { cartSubtotal, cartTax, cartTotal, clearCart } = this.props.value;
@@ -49,6 +50,7 @@ class CartTotals extends Component {
 
                   </span>
               </h5>
+              <PayPalButton total={cartTotal} clearCart={clearCart} history={this.props.history} />
             </div>
           </div>
         </div>
