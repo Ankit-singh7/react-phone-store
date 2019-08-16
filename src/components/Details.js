@@ -56,7 +56,7 @@ class Details extends Component {
                     </Link>
                     <ButtonContainer
                       cart
-                      disable={inCart ? true : false}
+                      disabled={inCart ? true : false}
                       onClick={() => {
                         value.addToCart(id);
                         value.openModal(id);
